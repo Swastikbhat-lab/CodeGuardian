@@ -1,4 +1,4 @@
-# 🤖 CodeGuardian
+#  CodeGuardian
 
 **Autonomous Code Quality & Testing Agent System**
 
@@ -11,7 +11,7 @@
 
 ---
 
-## 🎯 What is CodeGuardian?
+##  What is CodeGuardian?
 
 CodeGuardian is a **production-grade agentic AI system** that demonstrates the future of software development tools. Unlike simple linters or chatbots, it uses **8 specialized AI agents** that coordinate to:
 
@@ -24,32 +24,32 @@ CodeGuardian is a **production-grade agentic AI system** that demonstrates the f
 
 ---
 
-## ✨ Features
+##  Features
 
-### 🤖 **Multi-Agent Architecture**
+###  **Multi-Agent Architecture**
 - **8 Specialized Agents**: Coordinator, Static Analysis, Security, Logic, Test Generator, Test Runner, Bug Hunter, Fix Implementer
 - **Autonomous Decision-Making**: Agents plan and execute without human intervention
 - **Parallel Execution**: Agents work simultaneously for speed
 
-### 📊 **Full Observability**
+###  **Full Observability**
 - **Langfuse Integration**: Every LLM call, tool use, and decision tracked
 - **Cost Tracking**: Real-time token usage and cost monitoring
 - **Quality Metrics**: Automated scoring of agent outputs
 - **Performance Analytics**: Identify bottlenecks and optimize
 
-### 🔍 **Comprehensive Analysis**
+###  **Comprehensive Analysis**
 - **Static Analysis**: Pylint, Flake8, Black
 - **Security Scanning**: Bandit, Safety, pattern matching
 - **Logic Analysis**: Claude-powered semantic bug detection
 - **Complexity Metrics**: Radon code complexity analysis
 
-### 🧪 **Automated Testing**
+###  **Automated Testing**
 - **Test Generation**: Creates pytest tests automatically
 - **Coverage Analysis**: Measures and improves code coverage
 - **Bug Detection**: Finds bugs by analyzing test failures
 - **Root Cause Analysis**: Claude-powered failure investigation
 
-### 🛠️ **Auto-Fix Capabilities**
+###  **Auto-Fix Capabilities**
 - **Patch Generation**: Creates fixes for identified issues
 - **Validation**: Tests fixes before applying
 - **Pull Requests**: Automated GitHub PR creation
@@ -57,7 +57,7 @@ CodeGuardian is a **production-grade agentic AI system** that demonstrates the f
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 
@@ -111,7 +111,7 @@ python scripts/test_setup.py
 
 ---
 
-## 📖 Usage
+##  Usage
 
 ### Command Line
 
@@ -172,7 +172,7 @@ curl http://localhost:8000/api/reviews/{review_id}
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 ┌─────────────────────────────────────┐
@@ -203,7 +203,7 @@ curl http://localhost:8000/api/reviews/{review_id}
 
 ---
 
-## 📊 Example Output
+##  Example Output
 
 ```
 ╔═══════════════════════════════════════════════════════════╗
@@ -219,11 +219,11 @@ Cost: $0.47
 ┌─────────────────────────────────────┐
 │          ISSUES FOUND               │
 ├─────────────────────────────────────┤
-│ 🔴 Critical:  2                     │
-│ 🟠 High:      5                     │
-│ 🟡 Medium:   12                     │
-│ 🟢 Low:      18                     │
-│ ℹ️  Info:      9                     │
+│  Critical:  2                     │
+│  High:      5                     │
+│  Medium:   12                     │
+│  Low:      18                     │
+│   Info:      9                     │
 │                                     │
 │ Total: 46 issues                    │
 └─────────────────────────────────────┘
@@ -231,9 +231,9 @@ Cost: $0.47
 ┌─────────────────────────────────────┐
 │       TESTS GENERATED               │
 ├─────────────────────────────────────┤
-│ ✅ Generated:  45 tests             │
-│ ✅ Passed:     38                   │
-│ ❌ Failed:      7                   │
+│  Generated:  45 tests             │
+│  Passed:     38                   │
+│  Failed:      7                   │
 │                                     │
 │ Coverage: 87% (↑ from 34%)         │
 └─────────────────────────────────────┘
@@ -241,10 +241,10 @@ Cost: $0.47
 ┌─────────────────────────────────────┐
 │        FIXES APPLIED                │
 ├─────────────────────────────────────┤
-│ 🔧 Auto-fixed:  12 issues           │
-│ ⚠️  Needs review: 8 issues          │
-│ 📝 Test files:   45                 │
-│ 🔀 PR created:   #247               │
+│  Auto-fixed:  12 issues           │
+│   Needs review: 8 issues          │
+│  Test files:   45                 │
+│  PR created:   #247               │
 └─────────────────────────────────────┘
 
 View full trace: https://cloud.langfuse.com/trace/...
@@ -252,7 +252,7 @@ View full trace: https://cloud.langfuse.com/trace/...
 
 ---
 
-## 🎓 Project Structure
+##  Project Structure
 
 ```
 codeguardian/
@@ -285,7 +285,7 @@ codeguardian/
 
 ---
 
-## 💰 Cost Analysis
+##  Cost Analysis
 
 Typical costs per review (1000 LOC):
 
@@ -302,7 +302,7 @@ Typical costs per review (1000 LOC):
 
 ---
 
-## 📈 Metrics & Performance
+##  Metrics & Performance
 
 ### Quality Metrics
 - **Issue Detection**: 90%+ of critical bugs found
@@ -314,102 +314,15 @@ Typical costs per review (1000 LOC):
 - **Parallel Efficiency**: 3x faster with parallel agents
 - **Cost Efficiency**: $0.40-0.60 per 1000 LOC
 
----
-
-## 🛠️ Development
-
-### Running Tests
-
-```bash
-# Run all tests
-pytest
-
-# Run with coverage
-pytest --cov=. --cov-report=html
-
-# Run specific test file
-pytest tests/test_coordinator.py
-```
-
-### Code Quality
-
-```bash
-# Format code
-black .
-isort .
-
-# Type checking
-mypy .
-
-# Linting
-pylint codeguardian
-```
-
----
-
-## 🤝 Contributing
-
-This is a portfolio/learning project, but contributions welcome!
-
-1. Fork the repository
-2. Create feature branch
-3. Add tests for new features
-4. Ensure observability is tracked
-5. Submit pull request
-
----
-
-## 📝 License
-
-MIT License - see LICENSE file
-
----
-
-## 🙏 Acknowledgments
-
-- **Anthropic** for Claude API
-- **Langfuse** for observability platform
-- **LangChain** community
-
----
-
-## 📚 Documentation
+##  Documentation
 
 - [Complete Technical Spec](docs/TECHNICAL_SPEC.md)
 - [Agent Design Details](docs/AGENT_DESIGN.md)
 - [API Reference](docs/API_REFERENCE.md)
 - [Deployment Guide](docs/DEPLOYMENT.md)
 
----
 
-## 🎯 Roadmap
 
-- [ ] Week 1-2: Coordinator + Static Analysis
-- [ ] Week 3-4: Security + Logic agents
-- [ ] Week 5-6: Test generation + Bug hunter
-- [ ] Week 7-8: Fix implementation + UI
-- [ ] Week 9+: Production deployment
 
----
 
-## 💬 Support
 
-Questions? Issues?
-
-- Open an issue on GitHub
-- Review documentation
-- Check Langfuse traces for debugging
-
----
-
-**Built with ❤️ as a portfolio project demonstrating:**
-- ✅ Multi-agent orchestration
-- ✅ Production observability
-- ✅ Autonomous AI systems
-- ✅ Real-world business value
-
-**Status:** 🚧 Active Development (Week 1)
-
----
-
-*CodeGuardian - Making code quality autonomous*
