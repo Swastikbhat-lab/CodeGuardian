@@ -1,6 +1,6 @@
 # CodeGuardian
 
-Autonomous Code Review System with Production-Grade Observability
+Autonomous Code Review System 
 
 ## Overview
 
@@ -100,10 +100,6 @@ The system can currently:
 - Calculate costs and token usage
 - Generate execution reports
 
-Average performance:
-- 1000 lines of code reviewed in 5-8 minutes
-- Cost: $0.40-0.60 per review
-- Static analysis runs in seconds (no LLM cost)
 
 ## Development Roadmap
 
@@ -121,21 +117,7 @@ All agent operations are tracked via Langfuse:
 - Failure analysis
 - Decision logging
 
-## Documentation
-
-- See GET_STARTED_NOW.md for detailed setup guide
-- See DUAL_PROJECT_PLAN.md for complete technical specification
-- See EXECUTIVE_SUMMARY.md for project overview
 
 ## Contributing
 
 This is currently a portfolio/learning project. Week 1 focus is on building the foundation.
-
-## License
-
-MIT License
-
-## Contact
-
-Project by Swastik Bhat
-GitHub: https://github.com/Swastikbhat-lab/CodeGuardian
