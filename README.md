@@ -2,10 +2,6 @@
 
 Autonomous Code Review System 
 
-## Overview
-
-CodeGuardian is a multi-agent AI system that autonomously reviews code, generates tests, finds bugs, and suggests fixes. Built with full observability using Langfuse to track every agent decision, cost, and performance metric.
-
 ## What It Does
 
 - Analyzes code for bugs, security vulnerabilities, and style issues
