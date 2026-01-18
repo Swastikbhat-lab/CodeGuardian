@@ -34,23 +34,6 @@ Autonomous Code Review System
 - Redis (task queue)
 - React (dashboard UI)
 
-## Project Status
-
-Week 1 - Foundation
-
-Currently implemented:
-- Coordinator agent (fully functional)
-- Static Analysis agent (fully functional)
-- Core configuration system
-- Database models
-- Observability integration
-- Test suite
-
-In progress:
-- Security agent
-- Logic agent
-- Test generation pipeline
-- Dashboard UI
 
 ## Quick Start
 
@@ -97,12 +80,6 @@ The system can currently:
 - Generate execution reports
 
 
-## Development Roadmap
-
-Week 2-3: Security and Logic agents
-Week 4-5: Test generation and execution
-Week 6-7: Fix implementation and API
-Week 8: Dashboard UI and deployment
 
 ## Observability
 
