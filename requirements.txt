@@ -1,8 +1,0 @@
-anthropic
-langchain
-langchain-anthropic
-pylint
-flake8
-python-dotenv
-pydantic
-pydantic-settings
