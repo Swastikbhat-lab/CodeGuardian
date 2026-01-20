@@ -1,6 +1,7 @@
 anthropic
 langchain
 langchain-anthropic
+langfuse
 pylint
 flake8
 python-dotenv
