@@ -9,19 +9,7 @@ Autonomous Multi-Agent Code Review System with AI-Powered Analysis
 - Finds bugs, security issues, logic errors
 - Multi-agent coordination
 
-## Quick Start
 
-```bash
-# Install
-pip install -r requirements.txt
-
-# Configure (optional for AI features)
-cp .env.example .env
-# Add your Anthropic API key to .env
-
-# Test
-python test.py
-```
 
 ## What It Finds
 
