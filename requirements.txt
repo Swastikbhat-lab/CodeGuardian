@@ -4,6 +4,8 @@ langchain-anthropic
 langfuse
 pylint
 flake8
+bandit
+radon
 python-dotenv
 pydantic
 pydantic-settings

@@ -1,4 +1,4 @@
-"""Langfuse Observability"""
+"""Langfuse Observability - v3 API"""
 from langfuse import Langfuse
 from core.config import get_settings
 import time
@@ -14,7 +14,8 @@ if settings.langfuse_public_key and settings.langfuse_secret_key:
             secret_key=settings.langfuse_secret_key,
             host=settings.langfuse_host
         )
-    except:
+    except Exception as e:
+        print(f"Langfuse init error: {e}")
         langfuse_client = None
 
 
@@ -23,6 +24,7 @@ class AgentTracer:
     
     def __init__(self, trace_name: str):
         self.trace_name = trace_name
+        self.trace_id = f"trace_{int(time.time())}"
         self.generations = {}
     
     def start_span(self, agent_name: str, input_data: dict = None):
@@ -40,24 +42,28 @@ class AgentTracer:
         gen_data = self.generations[agent_name]
         duration = time.time() - gen_data['start_time']
         
-        # Log to Langfuse
         try:
+            # Create generation using v3 API
             langfuse_client.generation(
-                name=f"{self.trace_name}_{agent_name}",
-                input=gen_data['input'],
+                name=agent_name,
+                trace_id=self.trace_id,
+                input=gen_data.get('input'),
                 output=output_data,
+                model="claude-sonnet-4-20250514",
                 usage={
-                    'total': tokens,
-                    'input': int(tokens * 0.4),
-                    'output': int(tokens * 0.6)
+                    "input": int(tokens * 0.4),
+                    "output": int(tokens * 0.6),
+                    "total": tokens
                 },
                 metadata={
-                    'duration_seconds': duration,
-                    'cost_usd': cost
+                    "duration_seconds": round(duration, 2),
+                    "cost_usd": round(cost, 4),
+                    "trace_name": self.trace_name
                 }
             )
         except Exception as e:
-            print(f"   Langfuse logging error: {e}")
+            # Silent fail - don't break execution
+            pass
     
     def finish(self):
         """Finish the trace"""

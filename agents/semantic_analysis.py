@@ -1,5 +1,6 @@
 """Semantic Analysis Agent - Uses Claude to find logic bugs"""
 from typing import Dict, List
+import os
 from anthropic import Anthropic
 from core.config import get_settings
 from core.observability import calculate_cost
@@ -22,7 +23,9 @@ def analyze_semantics(code_files: Dict[str, str], tracer=None) -> Dict:
         if not filepath.endswith('.py'):
             continue
         
-        prompt = f"""Analyze this Python code for bugs and logic errors.
+        prompt = f"""Analyze this code for bugs and logic errors.
+
+Language: {os.path.splitext(filepath)[1]}
 Focus on:
 - Potential runtime errors
 - Logic bugs
@@ -30,7 +33,7 @@ Focus on:
 - Security issues
 
 Code:
-```python
+```
 {code}
 ```
 
