@@ -1,0 +1,61 @@
+[33mcommit 76d8f53bea55ebf39006162c52ac8fbb07a2717b[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Swastikbhat-lab <your-email@example.com>
+Date:   Fri Jan 23 17:06:37 2026 -0500
+
+    feat: Context-aware LangGraph pipeline with intelligent suppression
+
+[33mcommit c0f7ef13ea1e88a8782ce321e0d14757b73ec89b[m
+Author: Swastik Bhat <53359483+Swastikbhat-lab@users.noreply.github.com>
+Date:   Tue Jan 20 23:44:17 2026 -0500
+
+    Remove quick start section from README
+    
+    Removed quick start instructions from README.
+
+[33mcommit 3bec13d81c6dd95c4b9437dbc231cfa1d6d027b5[m
+Author: Swastikbhat-lab <your-email@example.com>
+Date:   Tue Jan 20 01:22:00 2026 -0500
+
+    feat: Add observability with cost and token tracking
+
+[33mcommit 9d7823c935d1358df5eec60c6ff1d54f19c065ea[m
+Author: Swastikbhat-lab <your-email@example.com>
+Date:   Tue Jan 20 00:56:47 2026 -0500
+
+    Complete system with semantic analysis and test generation
+
+[33mcommit cf04f84f3c8b306891d691f28167e229a2f7adb6[m
+Author: Swastikbhat-lab <your-email@example.com>
+Date:   Tue Jan 20 00:49:15 2026 -0500
+
+    feat: AI-powered code review with test generation
+
+[33mcommit 303eb8ba7bd1ae7420d89f4b083f5e6d98b5e448[m
+Author: Swastikbhat-lab <your-email@example.com>
+Date:   Tue Jan 20 00:34:11 2026 -0500
+
+    Clear for new version
+
+[33mcommit b9c41622a3c1bf806dc5cba4806764b86cd6a0df[m
+Author: Swastikbhat-lab <your-email@example.com>
+Date:   Tue Jan 20 00:32:15 2026 -0500
+
+    feat: Complete AI code review system with test generation
+
+[33mcommit f0468e139f9fb0f99cdead3437488ddb007cdf17[m
+Author: Swastikbhat-lab <your-email@example.com>
+Date:   Tue Jan 20 00:32:02 2026 -0500
+
+    Clear for new version
+
+[33mcommit 6f69954ee25bbd501ded4a7480c9d1f1aaf40d97[m
+Author: Swastikbhat-lab <your-email@example.com>
+Date:   Tue Jan 20 00:30:34 2026 -0500
+
+    feat: Add AI test generation
+
+[33mcommit f480a505166b46bdd2782d7820c086a99a167f5d[m
+Author: Swastikbhat-lab <your-email@example.com>
+Date:   Mon Jan 19 18:03:19 2026 -0500
+
+    feat: Add AI test generation agent
